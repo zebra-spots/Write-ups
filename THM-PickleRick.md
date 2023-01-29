@@ -96,3 +96,17 @@ Paste the python command into the target machine and your shell will pop
 
 ![image](https://user-images.githubusercontent.com/88425510/215358204-cb28d28e-6b8b-45f5-892d-148ef6584690.png)
 
+Look around for ingredients 
+
+![image](https://user-images.githubusercontent.com/88425510/215358232-9a0fbca8-aba5-489f-b94b-5ee4b0f4d3ee.png)
+
+Priv esc:
+
+Checking the sudo list for your user shows that you can run sudo on anything
+
+![image](https://user-images.githubusercontent.com/88425510/215358263-fddaeccf-209e-4503-9241-424f6d6c5f81.png)
+
+Shell stabilisation technique if needed:
+
+![image](https://user-images.githubusercontent.com/88425510/215358289-867dfc71-ed37-47fa-a64b-0f367ef00824.png)
+
