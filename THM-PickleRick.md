@@ -40,5 +40,21 @@ Check robots.txt
 
 Gobuster scan:
 
-![image](https://user-images.githubusercontent.com/88425510/215357822-d589ae89-7a9c-46db-b0ea-31f93b73902b.png)
+![image](https://user-images.githubusercontent.com/88425510/215357879-5a979bc1-7e4c-41d5-99cc-f30c900e1580.png)
 
+Have a look at the links found:
+
+Clue.txt
+![image](https://user-images.githubusercontent.com/88425510/215357894-f8b11984-a862-4ee2-a267-4110a680115d.png)
+
+assets
+![image](https://user-images.githubusercontent.com/88425510/215357899-5d042faf-43b9-4c71-a051-10181a0e0e8f.png)
+
+Login.php
+![image](https://user-images.githubusercontent.com/88425510/215357910-bc9d9b31-1a0e-4a3d-a007-a2a4b2cec1af.png)
+
+Log in to the login page using the previously found username and the password which was in the robots.txt page
+
+Gives a command panel to look at
+
+![image](https://user-images.githubusercontent.com/88425510/215357930-8def44de-849c-443a-9918-14034897547c.png)
