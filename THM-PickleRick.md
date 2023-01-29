@@ -46,15 +46,18 @@ Have a look at the links found:
 
 Clue.txt
 
-![image](https://user-images.githubusercontent.com/88425510/215357894-f8b11984-a862-4ee2-a267-4110a680115d.png)
+![image](https://user-images.githubusercontent.com/88425510/215357994-af0d89df-56f3-4f4e-a4fd-8b2fe3a5647c.png)
+
 
 assets
 
-![image](https://user-images.githubusercontent.com/88425510/215357899-5d042faf-43b9-4c71-a051-10181a0e0e8f.png)
+![image](https://user-images.githubusercontent.com/88425510/215358001-4561e4d7-569a-4881-b65a-ed2b2039a5bc.png)
+
 
 Login.php
 
-![image](https://user-images.githubusercontent.com/88425510/215357910-bc9d9b31-1a0e-4a3d-a007-a2a4b2cec1af.png)
+![image](https://user-images.githubusercontent.com/88425510/215358014-c1306bd9-b35b-47e2-bc91-47c214c5525f.png)
+
 
 Log in to the login page using the previously found username and the password which was in the robots.txt page
 
