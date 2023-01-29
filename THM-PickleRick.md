@@ -63,4 +63,36 @@ Log in to the login page using the previously found username and the password wh
 
 Gives a command panel to look at
 
-![image](https://user-images.githubusercontent.com/88425510/215357930-8def44de-849c-443a-9918-14034897547c.png)
+![image](https://user-images.githubusercontent.com/88425510/215358049-34d068b3-d8a1-4e6c-a3a1-4d6b139f227b.png)
+
+![image](https://user-images.githubusercontent.com/88425510/215358059-248eee40-c2ba-4fa0-9209-ad04a5602134.png)
+
+cat is disabled so we need to read files in a different way
+
+![image](https://user-images.githubusercontent.com/88425510/215358077-caaad498-0826-45aa-bb6c-84a57a0dd372.png)
+
+
+Test for ways we can upload a reverse shell:
+
+It has python3 installed on the box
+
+![image](https://user-images.githubusercontent.com/88425510/215358115-1ec9c9c9-98e0-4db9-9009-b58e6145c245.png)
+
+Find a python reverse shell on pentestmonkey
+
+![image](https://user-images.githubusercontent.com/88425510/215358135-d6e827f0-d124-4bb8-bc14-654b29a4b45e.png)
+
+Make sure to edit the reverse shell to python3, add your attack box IP and choose the port you will listen on.
+
+![image](https://user-images.githubusercontent.com/88425510/215358180-21d77f76-a301-4e0f-98cc-0c7c098d6364.png)
+
+
+Create a netcat listener
+
+![image](https://user-images.githubusercontent.com/88425510/215358192-76c5a7a3-660f-4f76-8c67-6f6f9a28ac56.png)
+
+
+Paste the python command into the target machine and your shell will pop
+
+![image](https://user-images.githubusercontent.com/88425510/215358204-cb28d28e-6b8b-45f5-892d-148ef6584690.png)
+
