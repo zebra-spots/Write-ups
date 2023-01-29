@@ -1,6 +1,6 @@
 # Pickle Rick
 
-Questions:
+## Questions:
 
 What is the first ingredient Rick needs?
 
@@ -9,14 +9,14 @@ What's the second ingredient Rick needs?
 What's the final ingredient Rick needs?
 
 
-Recon:
+## Recon:
 
 Ping tgt to see it is online
 
 ![image](https://user-images.githubusercontent.com/88425510/215357779-80ccca17-2611-497e-b313-2116a00845da.png)
 
 
-Nmap scan
+### Nmap scan
 
 Nmap 10.10.90.69 -Pn -A -p- -T5
 
@@ -40,7 +40,7 @@ Check robots.txt
 ![image](https://user-images.githubusercontent.com/88425510/215357832-ff0815d6-64d6-4617-a5d9-cdcc399471dc.png)
 
 
-Gobuster scan:
+### Gobuster scan:
 
 ![image](https://user-images.githubusercontent.com/88425510/215357879-5a979bc1-7e4c-41d5-99cc-f30c900e1580.png)
 
@@ -89,7 +89,7 @@ Make sure to edit the reverse shell to python3, add your attack box IP and choos
 ![image](https://user-images.githubusercontent.com/88425510/215358180-21d77f76-a301-4e0f-98cc-0c7c098d6364.png)
 
 
-Create a netcat listener
+### Create a netcat listener
 
 ![image](https://user-images.githubusercontent.com/88425510/215358192-76c5a7a3-660f-4f76-8c67-6f6f9a28ac56.png)
 
@@ -102,7 +102,7 @@ Look around for ingredients
 
 ![image](https://user-images.githubusercontent.com/88425510/215358232-9a0fbca8-aba5-489f-b94b-5ee4b0f4d3ee.png)
 
-Priv esc:
+## Priv esc:
 
 Checking the sudo list for your user shows that you can run sudo on anything
 
