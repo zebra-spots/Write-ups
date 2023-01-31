@@ -25,6 +25,7 @@ Found after googling that this can be found out in the registry editor. I also d
 ## What two accounts had administrative privileges (other than the Administrator user)?
 
 Using powershell:
+
 ![image](https://user-images.githubusercontent.com/88425510/215876341-09eab95d-1c9f-4b90-b114-95e4503beccb.png)
 
 Using cmd:
