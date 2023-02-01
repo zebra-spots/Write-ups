@@ -114,9 +114,7 @@ View all services
 
 Query a particular service
 
-```wmic service get name,pathname,displayname,startmode | findstr /i auto | findstr /i /v "C:\Windows\\" | findstr /i /v """
-```
- 
+```wmic service get name,pathname,displayname,startmode | findstr /i auto | findstr /i /v "C:\Windows\\" | findstr /i /v """ ```
 
 Look for unquoted service paths
 
