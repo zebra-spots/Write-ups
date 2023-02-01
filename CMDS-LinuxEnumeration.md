@@ -1,86 +1,58 @@
 # Linux Enumeration
 
-```
-cat /etc/issue
-```
+```cat /etc/issue```
 
 Distribution
 
-```
-uname -r
-```
+```uname -r```
 
 Get name and information about current kernel
 
-```
-cat /etc/*-release
-```
+```cat /etc/*-release```
 
 kernel version
 
-```
-lscpu
-```
+```lscpu```
 
 Check architecture
 
-```
-apt-check -p- --human-readable
-```
+```apt-check -p- --human-readable```
 
 Check patch status
 
-```
-yum updateinfo list cves
-```
+```yum updateinfo list cves```
 
 Alternative patch status check
 
-```
-cat /etc/passwd
-```
+```cat /etc/passwd```
 
 Get user list
 
-```
-getent passwd | grep admin
-```
+```getent passwd | grep admin```
 
 Search for users (pipe specific user is optional)
 
-```
-netstat -a
-```
+```netstat -a```
 
 Check network connections
 
-```
-netstat -I
-```
+```netstat -I```
 
 View network interfaces
 
-```
-netstat -r
-```
+```netstat -r```
 
 Display IP routing table
 
-```
-ip a
-```
+```ip a```
 
 Get IP info
 
-```
-/sbin/route
-```
+```/sbin/route```
 
 View routing tables
 
-```
-ps -aux
-```
+```ps -aux```
 
 Display services (+) = running (-) = stopped (?) = unknown	service --status-all
 Display processes (-a = all processes, -u = process owner, -x = show processes not attached to a terminal)
@@ -93,16 +65,12 @@ SUID is a feature that allows a file to be executed with the permissions of a sp
 If a program requires root permission to run and does have the SUID bit set, that could be valuable to privilege escalation.
 
 
-```
-grep -r -i password .
-```
+```grep -r -i password .```
 
 check for plaintext usernames and passwords (-r = recursiovely -I = ignore case) full stop indicates current directory, this can be replaced with any specified directory
 
 
-```
-HISTFILE
-```
+```HISTFILE```
 
 Stop linux command history being recorded	unset
 
