@@ -4,6 +4,10 @@
 
 Get user information
 
+```tasklist -svc```
+
+Displays services hosted in each process
+
 
 ```getpid```
 
