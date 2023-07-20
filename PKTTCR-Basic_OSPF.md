@@ -283,7 +283,7 @@ copy running-config startup-config
 
 ## Wildcard masks
 ~~~~~~
-Slash 	Netmask 	      Wildcard mask
+Slash 	Netmask 	        Wildcard mask
 /32 	255.255.255.255 	0.0.0.0
 /31 	255.255.255.254 	0.0.0.1
 /30 	255.255.255.252 	0.0.0.3
