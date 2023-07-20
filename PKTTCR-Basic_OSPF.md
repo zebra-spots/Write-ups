@@ -1,3 +1,8 @@
+## Design:
+
+![image](https://github.com/zebra-spots/Write-ups/assets/88425510/0e65a132-21ec-46ee-9c7d-4ec4a942c3f5)
+
+
 ## Topology:
 
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/ac6f6f8b-0e65-4855-aa6a-411e4def14b6)
@@ -263,6 +268,18 @@ exit
 copy running-config startup-config
 ~~~~~~
 
+## Check OSPF Info
+
+![image](https://github.com/zebra-spots/Write-ups/assets/88425510/0900eea8-157a-4ca1-b50a-31e5b1627e55)
+
+## Show IP route
+
+![image](https://github.com/zebra-spots/Write-ups/assets/88425510/5959ed5c-19bc-4804-a845-ae6667289d5e)
+
+
+## Subnet table
+
+![image](https://github.com/zebra-spots/Write-ups/assets/88425510/3674d186-2391-40c4-86c7-04b9aa2caba8)
 
 
 
