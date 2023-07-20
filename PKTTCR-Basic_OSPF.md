@@ -298,4 +298,6 @@ Slash 	Netmask 	Wildcard mask
 
 ## Final thoughts and notes
 
-
+The switches and routers in this simple network only have basic configurations.
+The SSH key being only 1024 bits would not be sufficient in a real network.
+The main drive of this exercise was to configure OSPF on 3 routers with LANs configured on two of them.
