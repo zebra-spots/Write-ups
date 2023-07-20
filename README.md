@@ -1,5 +1,5 @@
 # Write-ups
 
-Write ups for THM, HTB, LetsDefend and Immersive labs.
+Write ups of labs and learning exercises.
 
-Intend to also write about useful tools I use in labs.
+Intend to also write about useful tools or commands I use.
