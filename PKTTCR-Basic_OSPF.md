@@ -3,10 +3,9 @@
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/ac6f6f8b-0e65-4855-aa6a-411e4def14b6)
 
 # Switch configs
+~~~~~~
+## SW1
 
-#############
-SW1
-#############
 enable
 configure terminal
 !
@@ -41,7 +40,7 @@ service password-encryption
 exit
 !
 copy running-config start-up config
-
+~~~~~~
 
 ~~~~~~
 To test ssh
@@ -49,10 +48,9 @@ put pc onto same subnet and open terminal
 ssh -l admin 192.168.1.5
 ~~~~~~
 
+~~~~~~
+## SW2
 
-#############
-SW2
-#############
 enable
 configure terminal
 !
@@ -87,7 +85,7 @@ service password-encryption
 exit
 !
 copy running-config start-up config
-
+~~~~~~
 
 ~~~~~~
 To test ssh
