@@ -3,9 +3,9 @@
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/ac6f6f8b-0e65-4855-aa6a-411e4def14b6)
 
 # Switch configs
-~~~~~~
-## SW1
 
+SW1
+~~~~~~
 enable
 configure terminal
 !
@@ -42,9 +42,8 @@ exit
 copy running-config start-up config
 ~~~~~~
 
+SW2
 ~~~~~~
-## SW2
-
 enable
 configure terminal
 !
@@ -87,9 +86,8 @@ put pc onto same subnet and open terminal
 ssh -l admin 192.168.x.x
 ~~~~~~
 
+RTR1
 ~~~~~~
-## RTR1
-
 enable
 configure terminal
 !
@@ -135,9 +133,8 @@ end
 write
 ~~~~~~
 
+RTR2
 ~~~~~~
-## RTR2
-
 enable
 configure terminal
 !
@@ -183,9 +180,8 @@ end
 write
 ~~~~~~
 
+RTR3
 ~~~~~~
-## RTR3
-
 enable
 configure terminal
 !
@@ -226,9 +222,8 @@ end
 write
 ~~~~~~
 
+Router 1 OSPF config
 ~~~~~~
-## Router 1 OSPF config
-
 enable
 configure terminal
 router ospf 1
@@ -241,9 +236,8 @@ exit
 copy running-config startup-config
 ~~~~~~
 
+Router 2 OSPF config
 ~~~~~~
-## Router 2 OSPF config
-
 enable
 configure terminal
 router ospf 1
@@ -256,9 +250,8 @@ exit
 copy running-config startup-config
 ~~~~~~
 
+Router 3 OSPF config
 ~~~~~~
-## Router 3 OSPF config
-
 enable
 configure terminal
 router ospf 1
