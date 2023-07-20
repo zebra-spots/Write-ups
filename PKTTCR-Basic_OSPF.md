@@ -293,3 +293,8 @@ Slash 	Netmask 	Wildcard mask
 /26 	255.255.255.192 	0.0.0.63
 /25 	255.255.255.128 	0.0.0.127
 /24 	255.255.255.0 	0.0.0.255 
+
+
+## Final thoughts and notes
+
+
