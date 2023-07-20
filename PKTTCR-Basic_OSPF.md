@@ -282,7 +282,7 @@ copy running-config startup-config
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/3674d186-2391-40c4-86c7-04b9aa2caba8)
 
 ## Wildcard masks
-
+~~~~~~
 Slash 	Netmask 	Wildcard mask
 /32 	255.255.255.255 	0.0.0.0
 /31 	255.255.255.254 	0.0.0.1
@@ -293,7 +293,7 @@ Slash 	Netmask 	Wildcard mask
 /26 	255.255.255.192 	0.0.0.63
 /25 	255.255.255.128 	0.0.0.127
 /24 	255.255.255.0 	0.0.0.255 
-
+~~~~~~
 
 ## Final thoughts and notes
 
