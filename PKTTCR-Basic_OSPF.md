@@ -1,4 +1,4 @@
-![image](https://github.com/zebra-spots/Write-ups/assets/88425510/e61e1008-3f9d-4adc-9915-babdf7dd0320)## Topology:
+## Topology:
 
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/ac6f6f8b-0e65-4855-aa6a-411e4def14b6)
 
