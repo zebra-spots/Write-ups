@@ -4,11 +4,11 @@
 
 Note, PC's are assigned the number in their name as their final octet, apart from PC1 which has .10
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 # Switch configs
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Configuring VLANS:
 Switch 1:
@@ -53,13 +53,13 @@ SW1(config-if-range)#switchport mode access
 SW1(config-if-range)#switchport access vlan 120
 SW1(config-if-range)#exit
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ## Check VLAN Info
 
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/b8d56191-bed8-4f0f-aca6-e6ff52abe133)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Configuring trunk:
 Switch 1:
@@ -80,16 +80,16 @@ SW2(config-if)#switchport mode trunk
 SW2(config-if)#switchport trunk allowed vlan 110
 SW2(config-if)#switchport trunk allowed vlan 120
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ## Check Trunk Info
 
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/3808c511-a56f-411f-8d4d-555565cb8ae3)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ## See VLAN and trunk effects via pinging
 
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/c51f5d80-6224-4420-8cd8-fa2079128df3)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
