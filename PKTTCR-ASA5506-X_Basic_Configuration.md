@@ -1,6 +1,6 @@
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/27214c6f-565a-41dd-9434-8ecf0ab292cd)
 
-## Router config
+# Router config
 ~~~~~
 en
 conf t
@@ -20,7 +20,7 @@ exit
 wr
 !
 ~~~~~
-## Firewall config
+# Firewall config
 ~~~~~
 en
 # Note there is no password, so press enter
@@ -54,8 +54,8 @@ nat (inside,outside) dynamic interface
 exit
 !
 ~~~~~
-## Firewall rules
-# To allow ICMP, HTTP and DNS to work
+# Firewall rules
+To allow ICMP, HTTP and DNS to work
 ~~~~~
 conf t
 class-map inspection_default
