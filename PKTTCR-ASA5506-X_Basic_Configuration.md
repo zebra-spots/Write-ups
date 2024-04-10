@@ -55,6 +55,7 @@ exit
 !
 ~~~~~
 ## Firewall rules
+# To allow ICMP, HTTP and DNS to work
 ~~~~~
 conf t
 class-map inspection_default
