@@ -1,7 +1,7 @@
 ![image](https://github.com/zebra-spots/Write-ups/assets/88425510/27214c6f-565a-41dd-9434-8ecf0ab292cd)
 
 ## Router config
-
+~~~~~
 en
 conf t
 hostname Internet
@@ -19,9 +19,9 @@ exit
 !
 wr
 !
-
+~~~~~
 ## Firewall config
-
+~~~~~
 en
 # Note there is no password, so press enter
 
@@ -53,3 +53,4 @@ subnet 192.168.1.0 255.255.255.0
 nat (inside,outside) dynamic interface 
 exit
 !
+~~~~~
