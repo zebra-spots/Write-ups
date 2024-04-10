@@ -54,3 +54,40 @@ nat (inside,outside) dynamic interface
 exit
 !
 ~~~~~
+## Firewall rules
+~~~~~
+conf t
+class-map inspection_default
+match default-inspection-traffic
+exit
+!
+policy-map global_policy
+class inspection_default
+inspect icmp
+exit
+!
+service-policy global_policy global
+!
+policy-map global_policy
+class inspection_default
+inspect http
+exit
+!
+policy-map global_policy
+class inspection_default
+inspect dns
+exit
+!
+~~~~~
+## Firewall troubleshooting
+~~~~~
+If:
+
+ASA(config)#service-policy global_policy global
+WARNING: Policy map global_policy is already configured as a service policy
+
+Then:
+
+ASA(config)#no service-policy global_policy global
+ASA(config)#service-policy global_policy global
+~~~~~
